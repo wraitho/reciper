@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Reciper</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_search_hint">Search for ingredients</string>
+</resources>

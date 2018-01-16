@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion sdk.compileVersion
+
+    defaultConfig {
+        minSdkVersion sdk.minVersion
+        targetSdkVersion sdk.targetVersion
+        buildToolsVersion tools.buildToolsVersion
+    }
+
+    buildTypes {
+        release {
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+}
+
+dependencies {
+    compile project(path: ':commons')
+    compile project(path: ':styles')
+
+    implementation libs.appCompat
+    implementation libs.constraintLayout
+    implementation libs.design
+    implementation libs.kotlin
+    implementation libs.rxBinding
+    implementation libs.rxJava
+
+}

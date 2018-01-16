@@ -1,0 +1,7 @@
+<resources>
+    <string name="module_name">Widgets</string>
+
+    <string name="error_action_button_text">Retry</string>
+    <string name="error_title">Opps...</string>
+
+</resources>

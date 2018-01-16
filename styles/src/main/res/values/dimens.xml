@@ -1,0 +1,31 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    <dimen name="material_toolbar_elevation_default">4dp</dimen>
+    <dimen name="view_elevation">2dp</dimen>
+    <dimen name="text_size_title">16sp</dimen>
+    <dimen name="text_size_subtitle">14sp</dimen>
+    <dimen name="app_bar_height">240dp</dimen>
+    <dimen name="app_bar_scrim_height">120dp</dimen>
+
+
+    <!--Standardised metrics and keylines as per Material Spec
+    https://material.io/guidelines/layout/metrics-keylines.html#
+    -->
+    <dimen name="grid_0">0dp</dimen>
+    <dimen name="grid_4">4dp</dimen>
+    <dimen name="grid_8">8dp</dimen>
+    <dimen name="grid_12">12dp</dimen>
+    <dimen name="grid_16">16dp</dimen>
+    <dimen name="grid_20">20dp</dimen>
+    <dimen name="grid_24">24dp</dimen>
+    <dimen name="grid_28">28dp</dimen>
+    <dimen name="grid_32">32dp</dimen>
+    <dimen name="grid_40">40dp</dimen>
+    <dimen name="grid_48">48dp</dimen>
+    <dimen name="grid_52">52dp</dimen>
+    <dimen name="grid_72">72dp</dimen>
+
+</resources>

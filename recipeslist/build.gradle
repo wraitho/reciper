@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion sdk.compileVersion
+
+    defaultConfig {
+        minSdkVersion sdk.minVersion
+        targetSdkVersion sdk.targetVersion
+        buildToolsVersion tools.buildToolsVersion
+    }
+
+    buildTypes {
+        release {
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+}
+
+dependencies {
+    implementation project(path: ':network')
+    implementation project(path: ':styles')
+    implementation project(path: ':widgets')
+    implementation project(path: ':commons')
+    implementation project(path: ':details')
+
+    implementation libs.appCompat
+    implementation libs.componentsViewModel
+    implementation libs.componentsReactiveStreams
+    implementation libs.constraintLayout
+    implementation libs.dagger
+    implementation libs.design
+    implementation libs.glide
+    implementation libs.kotlin
+    implementation libs.retrofit
+    implementation libs.retrofitRxAdapter
+    implementation libs.rxBindingSupportV7
+    implementation libs.rxAndroid
+    implementation libs.rxJava
+
+    kapt libs.daggerCompiler
+    kapt libs.glideCompiler
+
+    testImplementation libs.junit
+    androidTestImplementation libs.testRunner
+    androidTestImplementation libs.espresso
+}

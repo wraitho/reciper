@@ -1,0 +1,11 @@
+<resources>
+    <string name="module_name">Reciper Details</string>
+
+    <string name="label_published_by">Published by</string>
+    <string name="label_rated">Rated</string>
+    <string name="label_ingredients">Ingredients</string>
+    <string name="label_directions">Directions</string>
+    <string name="label_link_to_directions">Link To Directions</string>
+    <string name="pattern_rate">%.2f / 100.00</string>
+
+</resources>

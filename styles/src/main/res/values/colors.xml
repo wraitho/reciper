@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // Colors set for the style
+    <color name="primary_color">@color/pale_green</color>
+    <color name="primary_color_dark">@color/green_dark</color>
+    <color name="background_color">@color/white</color>
+    <color name="error_background">@color/dim_color</color>
+
+
+    // Colors defined here
+    <color name="pale_green">#C8D76A</color>
+    <color name="link_blue">#64b5f6</color>
+    <color name="green_dark">#33691e</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dim_color">#96000000</color>
+
+    <color name="translucent_scrim_bottom">#64000000</color>
+    <color name="translucent_scrim_bottom_center">#32000000</color>
+
+</resources>

@@ -1,0 +1,81 @@
+/**  C o m m o n   D e p e n d e n c i e s  **/
+
+ext {
+    sdk = [
+            compileVersion: 27,
+            targetVersion:  27,
+            minVersion:    18
+    ]
+
+    tools = [
+            buildToolsVersion: "27.0.3",
+    ]
+
+    // kotlinVersion = "1.1.60"
+
+    ankoVersion = "0.10.3"
+    componentsVersion = "1.0.0"
+    componentsPagingVersion = "1.0.0-alpha4-1"
+    constraintLayoutVersion = "1.0.2"
+    daggerVersion = "2.13"
+    espressoCoreVersion = "3.0.1"
+    glideVersion = "4.4.0"
+    gsonVersion = "2.8.2"
+    javaxAnnotationVersion = "1.0"
+    junitVersion = "4.12"
+    kluentVersion = '1.29'
+    mockitoVersion = "2.10.0"
+    moshiVersion = "1.5.0"
+    okhttpVersion = "3.9.1"
+    picassoVersion = "2.5.2"
+    retrofitVersion = "2.3.0"
+    rxAndroidVersion = "2.0.1"
+    rxBindingVersion = "2.0.0"
+    rxJavaVersion = "2.1.6"
+    rxKotlinVersion = "2.2.0"
+    supportVersion = "27.0.2"
+    testRunnerVersion = "1.0.1"
+
+    libs = [
+            anko                        : "org.jetbrains.anko:anko:${ankoVersion}",
+            annotations                 : "com.android.support:support-annotations:${supportVersion}",
+            appCompat                   : "com.android.support:appcompat-v7:${supportVersion}",
+            componentsLifeCycle         : "android.arch.lifecycle:runtime:${componentsVersion}",
+            componentsLifeCycleComp     : "android.arch.lifecycle:compiler:${componentsVersion}",
+            componentsLifeCycleJava8    : "android.arch.lifecycle:common-java8:${componentsVersion}",
+            componentsReactiveStreams   : "android.arch.lifecycle:reactivestreams:${componentsVersion}",
+            componentsViewModel         : "android.arch.lifecycle:extensions:${componentsVersion}",
+            componentsPaging            : "android.arch.paging:runtime:${componentsPagingVersion}",
+            componentsTesting           : "android.arch.core:core-testing:${componentsVersion}",
+            constraintLayout            : "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}",
+            dagger                      : "com.google.dagger:dagger:${daggerVersion}",
+            daggerCompiler              : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            design                      : "com.android.support:design:${supportVersion}",
+            espresso                    : "com.android.support.test.espresso:espresso-core:${espressoCoreVersion}",
+            glide                       : "com.github.bumptech.glide:glide:${glideVersion}",
+            glideCompiler               : "com.github.bumptech.glide:compiler:${glideVersion}",
+            gson                        : "com.google.code.gson:gson:${gsonVersion}",
+            javaxAnnotation             : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            junit                       : "junit:junit:${junitVersion}",
+            kluent                      : "org.amshove.kluent:kluent-android:${kluentVersion}",
+            kotlin                      : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${kotlinVersion}",
+            mockito                     : "org.mockito:mockito-core:${mockitoVersion}",
+            moshi                       : "com.squareup.moshi:moshi:${moshiVersion}",
+            moshiKotlin                 : "com.squareup.moshi:moshi-kotlin:${moshiVersion}",
+            okHttpLogInterceptor        : "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}",
+            okHttpMockWebServer         : "com.squareup.okhttp3:mockwebserver:${okhttpVersion}",
+            picasso                     : "com.squareup.picasso:picasso:${picassoVersion}",
+            recyclerView                : "com.android.support:recyclerview-v7:${supportVersion}",
+            retrofit                    : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitGson                : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitMock                : "com.squareup.retrofit2:retrofit-mock:${retrofitVersion}",
+            retrofitMoshi               : "com.squareup.retrofit2:converter-moshi:${retrofitVersion}",
+            retrofitRxAdapter           : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            rxAndroid                   : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            rxBinding                   : "com.jakewharton.rxbinding2:rxbinding-kotlin:${rxBindingVersion}",
+            rxBindingSupportV7          : "com.jakewharton.rxbinding2:rxbinding-appcompat-v7-kotlin:${rxBindingVersion}",
+            rxJava                      : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxKotlin                    : "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            testRunner                  : "com.android.support.test:runner:${testRunnerVersion}",
+    ]
+}

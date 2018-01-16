@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:paddingBottom="@dimen/grid_8"
+                                             android:layout_margin="@dimen/grid_8"
+                                             android:background="@color/background_color"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/listItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginEnd="@dimen/grid_8"
+        android:layout_marginStart="@dimen/grid_8"
+        android:layout_marginTop="@dimen/grid_8"
+        android:transitionName="image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:id="@+id/listItemText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/grid_8"
+        android:layout_marginStart="@dimen/grid_8"
+        android:layout_marginTop="@dimen/grid_8"
+        android:layout_marginBottom="@dimen/grid_8"
+        tools:text="TextView"
+        style="@style/RecipeNameStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listItemImage"/>
+
+</android.support.constraint.ConstraintLayout>
